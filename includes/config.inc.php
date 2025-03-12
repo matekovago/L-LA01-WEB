@@ -1,6 +1,6 @@
 <?php
 $ablakcim = array(
-    'cim' => 'Mini honlap Kft.',
+    'cim' => 'Telefon nyílvántartó',
 );
 
 $fejlec = array(
@@ -12,7 +12,7 @@ $fejlec = array(
 
 $lablec = array(
     'copyright' => 'Copyright '.date("Y").'.',
-    'ceg' => 'Mini honlap Kft.'
+    'ceg' => 'Kővágó Máté'
 );
 
 $oldalak = array(
