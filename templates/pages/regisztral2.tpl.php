@@ -1,6 +1,5 @@
-<h2>Regisztráció</h2>
+<h2>Regisztráció2</h2>
 
-/*
 <form action = "?regisztracio" method = "post">
 <fieldset>
 <legend>Regisztráció</legend>
@@ -13,4 +12,3 @@
 <br>&nbsp;
 </fieldset>
 </form>
-*/
