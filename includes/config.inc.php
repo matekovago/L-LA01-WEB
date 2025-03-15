@@ -25,7 +25,17 @@ $oldalak = array(
     'uzenet' => array('fajl' => 'uzenet', 'szoveg' => 'Üzenetek', 'menun' => array(1,1)),
     'belep' => array('fajl' => 'belep', 'szoveg' => '', 'menun' => array(0,0)),
     'regisztracio' => array('fajl' => 'regisztracio', 'szoveg' => 'Regisztráció', 'menun' => array(0,0)),
+    'kepfelform' => array('fajl' => 'kepfelform', 'szoveg' => 'Kép feltöltés', 'menun' => array(1,1)),
+    'kepfel' => array('fajl' => 'kepfel', 'szoveg' => 'Kép feltöltés', 'menun' => array(0,0)),
 );
 
 $hiba_oldal = array ('fajl' => '404', 'szoveg' => 'A keresett oldal nem található!');
+
+$MAPPA = './images/';
+$TIPUSOK = array ('.jpg', '.png');
+$MEDIATIPUSOK = array('image/jpeg', 'image/png');
+$DATUMFORMA = "Y.m.d. H:i"; 
+$MAXMERET = 500*1024; 
+
+
 ?>
