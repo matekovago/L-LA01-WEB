@@ -27,6 +27,7 @@ $oldalak = array(
     'regisztracio' => array('fajl' => 'regisztracio', 'szoveg' => 'Regisztráció', 'menun' => array(0,0)),
     'kepfelform' => array('fajl' => 'kepfelform', 'szoveg' => 'Kép feltöltés', 'menun' => array(1,1)),
     'kepfel' => array('fajl' => 'kepfel', 'szoveg' => 'Kép feltöltés', 'menun' => array(0,0)),
+    'uzenetk' => array('fajl' => 'uzenetk', 'szoveg' => 'Üzenet Küldés', 'menun' => array(0,0)),
 );
 
 $hiba_oldal = array ('fajl' => '404', 'szoveg' => 'A keresett oldal nem található!');
