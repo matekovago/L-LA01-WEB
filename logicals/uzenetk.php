@@ -7,7 +7,7 @@
 if(isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['message'])) {
 
     try {
-        $dbh = new PDO('mysql:host=localhost;dbname=gyakorlat7', 'root', '', array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+        $dbh = new PDO($servername.$dbname, $username, $password, array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
         $dbh->query('SELECT * FROM `uzenetek`');
 
         $sqlInsert = "insert into uzenetek( nev, bejelentkezes, email, message, date)

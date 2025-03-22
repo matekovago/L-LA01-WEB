@@ -37,6 +37,12 @@
 							<?php } ?>
 						<?php } ?>
 					</ul>
+					<?php if(isset($_SESSION['login'])) { ?>
+
+						<div class="d-flex">
+						<button type="button" class="btn btn-success">Bejelentkezett: <?= $_SESSION['csn']?> <?= $_SESSION['un']?>(<?= $_SESSION['login']?>)</button>
+						</div>
+					<?php  } ?>
 				</div>
 			</div>
 		</nav>
