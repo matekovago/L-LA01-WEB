@@ -18,14 +18,13 @@
 	</header>
 -->
 
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
 
-			<div class="container-fluid">
-	
-    <a class="navbar-brand" href="./">Telefon nyílvántartó</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+	<div class="container-fluid">
+    		<a class="navbar-brand" href="./">Telefon nyílvántartó</a>
+    			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      				<span class="navbar-toggler-icon"></span>
+    			</button>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ul class="navbar-nav me-auto mb-2 mb-md-0">
 						<?php foreach ($oldalak as $url => $oldal) { ?>
@@ -44,18 +43,23 @@
 						</div>
 					<?php  } ?>
 				</div>
-			</div>
-		</nav>
+					</div>
+				</nav>
 
-        <div id="content">
-            <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
-        </div>
+
+<div id="content">
+    <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
+</div>
 
     <footer>
-        <?php if(isset($lablec['copyright'])) { ?>&copy;&nbsp;<?= $lablec['copyright'] ?> <?php } ?>
-		&nbsp;
-        <?php if(isset($lablec['ceg'])) { ?><?= $lablec['ceg']; ?><?php } ?>
+		<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+			<div class="container">
+				<?php if(isset($lablec['copyright'])) { ?>&copy;&nbsp;<?= $lablec['copyright'] ?> <?php } ?>
+				&nbsp;
+				<?php if(isset($lablec['ceg'])) { ?><?= $lablec['ceg']; ?><?php } ?>
+			</div>
+		</div>
     </footer>
-	<script src="./styles/bootstrap.bundle.min.js"></script>
+<script src="./styles/bootstrap.bundle.min.js"></script>
 </body>
 </html>
