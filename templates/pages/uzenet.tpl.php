@@ -11,6 +11,7 @@ try {
             <th>Név</th>
             <th>e-mail</th>
             <th>Üzenet</th>
+            <th>Üzenet</th>
             <th>Dátum</th>
         </tr>
         
@@ -20,6 +21,7 @@ try {
                 <td><?= $result['nev']?></td>
                 <td><?= $result['email']?></td>
                 <td><?= $result['message']?></td>
+                <td><?= $result['bejelentkezes']?></td>
                 <td><?= $result['date']?></td>
             </tr>
             

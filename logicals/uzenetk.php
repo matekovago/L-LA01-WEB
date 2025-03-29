@@ -14,7 +14,7 @@ if(isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['message'])) {
                           values( :nev, :bejelentkezes, :email, :message, :date)";
         $stmt = $dbh->prepare($sqlInsert);
 
-        $stmt->execute(array(':nev' => $_POST['nev'], ':bejelentkezes' => $_POST['nev'],
+        $stmt->execute(array(':nev' => $_POST['nev'], ':bejelentkezes' =>(isset($_SESSION['login'])?$_SESSION['login']:'Vendég'),
                                  ':email' => $_POST['email'],':message' => $_POST['message'], ':date' => date("Y-m-d H:i:s") ));
 
          if($count = $stmt->rowCount()) {
