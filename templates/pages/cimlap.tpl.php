@@ -1,7 +1,7 @@
 <div class="jumbotron">
     <div class="container">
         <h1 class="display-5 fw-bold">Címlap</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p>Etiam auctor facilisis mi vel ullamcorper. Fusce sit amet eleifend diam. Nulla in magna fermentum enim accumsan ullamcorper in laoreet odio. Curabitur feugiat ex quis varius fermentum. Etiam lorem lacus, blandit sit amet quam lacinia, ultrices finibus nulla. Praesent vel odio massa. Praesent tincidunt maximus est eu bibendum. Aliquam erat volutpat. Donec molestie turpis eget massa volutpat, ut consectetur erat lacinia. Cras suscipit sapien quis justo mattis, sed eleifend nunc interdum. Proin ut urna id turpis interdum fringilla quis vel odio. Vestibulum ultrices turpis sit amet erat hendrerit, sed pellentesque massa eleifend.</p>
     </div>
 </div>
 
@@ -42,6 +42,9 @@
         <div class="col-12 col-md-6">
             <div class="h-100 p-3 bg-body-tertiary border rounded-3">
                 <h3 class="display-8 fw-bold">Címünk</h3>
+                  <p>Kecskemét</p>
+                  <p>Izsáki út 10</p>
+                  </p>Irányítószám : 6000</p>
             </div>
         </div>
 

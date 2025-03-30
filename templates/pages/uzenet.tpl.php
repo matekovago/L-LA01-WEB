@@ -5,27 +5,31 @@ try {
     $dbh = new PDO($servername.$dbname, $username, $password, array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
     $sql = $dbh->prepare("SELECT * FROM uzenetek ORDER BY uzid DESC");
     $sql->execute();?>
-    <table>
-        <tr>
-            <th>Üzenet ID</th>
-            <th>Név</th>
-            <th>e-mail</th>
-            <th>Üzenet</th>
-            <th>Üzenet</th>
-            <th>Dátum</th>
-        </tr>
-        
-        <?php while ($result = $sql->fetch(PDO::FETCH_ASSOC)){?>
-            <tr>
-                <td><?= $result['uzid']?></td>
-                <td><?= $result['nev']?></td>
-                <td><?= $result['email']?></td>
-                <td><?= $result['message']?></td>
-                <td><?= $result['bejelentkezes']?></td>
-                <td><?= $result['date']?></td>
-            </tr>
-            
-            <?php
+    <div class="container">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Üzenet ID</th>
+                    <th scope="col">Név</th>
+                    <th scope="col">e-mail</th>
+                    <th scope="col">Üzenet</th>
+                    <th scope="col">Üzenet</th>
+                    <th scope="col">Dátum</th>
+                </tr>
+            </thead>
+            <tbody>
+            <?php while ($result = $sql->fetch(PDO::FETCH_ASSOC)){?>
+                <tr>
+                    <th scope="row"><?= $result['uzid']?></th>
+                    <td><?= $result['nev']?></td>
+                    <td><?= $result['email']?></td>
+                    <td><?= $result['message']?></td>
+                    <td><?= $result['bejelentkezes']?></td>
+                    <td><?= $result['date']?></td>
+                </tr>
+            </tbody>
+    </div>            
+    <?php
 
 }
 
