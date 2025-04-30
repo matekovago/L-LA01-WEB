@@ -1,9 +1,34 @@
 <?php
+$ellenorzes = true;
+if(isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['message'])){
+    $re = '/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/';
+    if(strlen($_POST['nev']) < 5 || strlen($_POST['nev']) >30 )
+    {
+        $ellenorzes = false;
+        $uzenet =" Hibás név!";
+        $ujra = true;
+    } 
+    
+    if(!preg_match($re,$_POST['email'])){
+        $ellenorzes = false;
+        $uzenet =" Hibás email!";
+        $ujra = true;
+    }
+    if(strlen($_POST['message']) == 0){
+        $ellenorzes = false;
+        $uzenet =" Hibás üzenet!";
+        $ujra = true;
+    }
+
+} else{
+    $ellenorzes = false;
+    $uzenet =" Nincsenek adatok!";
+    $ujra = true;
+
+}
 
 
-
-
-if(isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['message'])) {
+if($ellenorzes) {
 
     try {
         $dbh = new PDO($servername.$dbname, $username, $password, array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
@@ -36,5 +61,5 @@ if(isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['message'])) {
             $ujra = true;
 } 
 
-}
+} 
 ?>

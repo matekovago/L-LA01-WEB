@@ -13,7 +13,7 @@ try {
                     <th scope="col">Név</th>
                     <th scope="col">e-mail</th>
                     <th scope="col">Üzenet</th>
-                    <th scope="col">Üzenet</th>
+                    <th scope="col">Felhasználó</th>
                     <th scope="col">Dátum</th>
                 </tr>
             </thead>
